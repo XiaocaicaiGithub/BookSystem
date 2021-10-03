@@ -1,0 +1,37 @@
+<!DOCTYPE Html>
+<Html Lang='ZH'>
+<Head>
+    <Meta Charset='UTF-8'>
+    <Title>图书馆里系统</Title>
+    <Link Href='/Statics/Index/Index.css' Rel='StyleSheet'>
+</Head>
+<Body>
+<Main>
+    <Table>
+        <Tr>
+            <Td>书名</Td>
+            <Td>代码</Td>
+            <Td>价格</Td>
+            <Td>简介</Td>
+        </Tr>
+        {% for Book in Books %}
+        <Tr>
+            <Td>{{ Book.Name }}</Td>
+            <Td>{{ Book.Code }}</Td>
+            {% if Book.Price %}
+            <Td>{{ Book.Price }}</Td>
+            {% else %}
+            <Td>暂无价格</Td>
+            {% endif %}
+            {% if Book.Info %}
+            <Td>{{ Book.Info }}</Td>
+            {% else %}
+            <Td>暂无简介</Td>
+            {% endif %}
+        </Tr>
+        {% endfor %}
+    </Table>
+</Main>
+</Body>
+<Script Src='/Statics/Index/Index.js'></Script>
+</Html>

@@ -1,0 +1,18 @@
+Html, Body {
+    Margin: 0;
+    Width: 100%;
+    Height: 100%;
+    Background-Color: #F2F2F2;
+}
+
+Html Body Main {
+    Margin: 10Px;
+    Text-Align: Center;
+    Border-Radius: 5px;
+    Border: Solid 1Px #D1D1D1;
+    Background-Color: #FFFFFF;
+}
+
+Html Body Main * {
+    Margin: 5Px Auto;
+}
